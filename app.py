@@ -12,7 +12,7 @@ app = Flask(__name__)
 Message = os.getenv("Message", "Hello, Roels")
 
 
-@app.route('/')
+@app.route('/Message')
 def home():
     return jsonify({"message": Message})
 
